@@ -269,6 +269,15 @@ class SupersetAppInitializer:  # pylint: disable=too-many-public-methods
             category_icon="",
         )
 
+        appbuilder.add_link(
+            "Add users",
+            label=__("Add users"),
+            href="/tablemodelview/list/",
+            icon="fa-table",
+            category="",
+            category_icon="",
+        )
+
         appbuilder.add_view(
             DynamicPluginsView,
             "Plugins",
